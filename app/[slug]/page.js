@@ -7,7 +7,7 @@ export default function page({params}) {
 
   useEffect(() => {
     if(params.slug >= 1000000000 && params.slug <= 9999999999 )
-      window.location.assign("tel:9927245142")
+      window.location.assign(`tel:${params.slug}`)
     else{
       alert("Not a valid number please try with another number")
     }
